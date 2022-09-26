@@ -1,0 +1,15 @@
+region = "eu-west-1"
+
+deployment  = "cluster1"
+environment = "dev"
+
+vpc_main_cidr_block               = "10.0.0.0/16"
+subnet_private_count              = 2
+subnet_private_cidr_blocks        = ["<cidr1>", "<cidr2>"]
+subnet_private_availability_zones = ["<az1>", "<az2>"]
+
+microservice1_port              = 8080
+microservice1_count             = 1
+microservice1_docker_image      = "<id>.dkr.ecr.<region>.amazonaws.com/<image>:<tag>"
+microservice1_cpu_allocation    = 1024
+microservice1_memory_allocation = 2048
